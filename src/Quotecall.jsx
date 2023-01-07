@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { fa-solid, fa-quote-left } from '@fontawesome/free-solid-svg-icons'
 
 function Quotecall() {
   const [quote, setQuote] = useState(null);
@@ -18,7 +20,14 @@ function Quotecall() {
 
   return (
     <div id='quote-block' className='font-sans'>
-      {quote && <p className='quote'>{quote}</p>}
+      
+      {quote &&
+        <div className='quote-box'> 
+        <i className="fa-solid fa-quote-left"></i>
+        <p className='quote'>{quote}</p>
+        <i className="fa-solid fa-quote-right"></i>
+        </div>
+        }
       {author && <p className='author'>{author}</p>}
       {error && <p>{error}</p>}
       <button onClick={handleClick}>Get quote</button>

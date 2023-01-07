@@ -18,9 +18,31 @@ body {
   text-align: center;
 }
 
+.quote-box {
+  display: inline-flex;
+}
+
+.fa-quote-left {
+  position: relative;
+  font-size: 2rem;
+  top:  1.5rem;
+  left: 3rem;
+  opacity: 0.1;
+}
+
+.fa-quote-right {
+  position: relative;
+  font-size: 2rem;
+  margin-top: auto;
+  right: 3rem;
+  bottom:1.5rem;
+  opacity: 0.1;
+}
+
 #quote-block .quote {
   font-size: 2rem;
   max-width: 20rem;
+  padding: 0 1rem;
 }
 
 #quote-block .author {
