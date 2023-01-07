@@ -39,6 +39,16 @@ body {
   opacity: 0.1;
 }
 
+.on {
+  display:block;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.off {
+  display: none;
+}
+
 #quote-block .quote {
   font-size: 2rem;
   max-width: 20rem;
@@ -46,9 +56,14 @@ body {
 }
 
 #quote-block .author {
-  margin: 2rem 0;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   font-style: italic;
   font-size: 1.5rem;
+}
+
+.description {
+  font-family: Lato,'sans-serif';
 }
 
 #quote-block button {

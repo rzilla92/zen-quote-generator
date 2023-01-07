@@ -8,7 +8,7 @@ function App() {
 
   return (
     <section className='main-container'>
-      <h1 className='title'>Zen Quote</h1>
+      <h1 className='title'>Quote Generator</h1>
       <Quotecall />
       <Footer />
     </section>
