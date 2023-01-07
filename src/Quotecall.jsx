@@ -12,7 +12,7 @@ function Quotecall() {
     setLoading(true)
     setQuote(null)
     setAuthor(null)
-    fetch('https://zenquotes.io/api/random')
+    fetch('https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/random')
       .then(res => res.json())
       .then(res => {
         setQuote(res[0].q)
