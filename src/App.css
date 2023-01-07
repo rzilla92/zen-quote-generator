@@ -1,0 +1,50 @@
+body {
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 98vh;
+}
+
+.main-container h1{
+  font-size: 2rem;
+  font-family: Lato, 'sans-serif';
+}
+
+#quote-block {
+  text-align: center;
+}
+
+#quote-block .quote {
+  font-size: 2rem;
+  max-width: 20rem;
+}
+
+#quote-block .author {
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+#quote-block button {
+  border-radius: 2rem;
+  background-color: blueviolet;
+  color: white;
+  border: 1px white solid;
+  
+  padding: 1.2rem 1.5rem;
+
+}
+
+#quote-block button:hover {
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+}
+
+footer {
+  margin-top: auto;
+}
