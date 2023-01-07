@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Quotecall from './Quotecall'
 import "./App.css"
-import { Footer } from './footer'
+import { Footer } from './Footer'
 
 function App() {
   
