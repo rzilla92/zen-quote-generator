@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import LoadingIcons from 'react-loading-icons'
-// import { fa-solid, fa-quote-left } from '@fontawesome/free-solid-svg-icons'
 
 function Quotecall() {
   const [quote, setQuote] = useState(null);
@@ -12,11 +11,12 @@ function Quotecall() {
     setLoading(true)
     setQuote(null)
     setAuthor(null)
-    fetch('https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/random')
+    fetch('https://api.quotable.io/random',
+    ) 
       .then(res => res.json())
       .then(res => {
-        setQuote(res[0].q)
-        setAuthor(res[0].a)
+        setQuote(res.content)
+        setAuthor(res.author)
         setLoading(false)
       })
       .catch(error => setError(error));
